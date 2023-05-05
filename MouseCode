@@ -9,7 +9,7 @@
     <script>
         class Demo extends Phaser.Scene {
             create() {
-                this.meep = this.add.text(10,10,'🐁').setOrigin(0.5,0.5);
+                this.meep = this.add.text(10,10,'💩').setOrigin(0.5,0.5);
                 this.input.setDefaultCursor('none');
                 this.input.on('pointerdown', (event) => {
                     this.tweens.add({
@@ -65,10 +65,10 @@
             }
         }
         let game = new Phaser.Game({
-            width: 640,
-            height: 520,
+            width: 840,
+            height: 720,
             scene: Demo,
-            backgroundColor: 0xdddddd,
+            backgroundColor: 0xA020F0,
             parent: 'here'
         });
     </script>
